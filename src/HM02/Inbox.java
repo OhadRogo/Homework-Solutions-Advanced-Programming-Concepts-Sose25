@@ -27,7 +27,7 @@ public class Inbox {
         int count = 0;
         for (int i = 0; i < inbox.size(); i++) {
             Mail mail = inbox.get(i);
-            if (mail.isRead()==false) count++;
+            if (!mail.isRead()) count++;
         }
         return count;
     }

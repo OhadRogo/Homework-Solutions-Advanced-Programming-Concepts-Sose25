@@ -7,13 +7,15 @@ public class Mail {
     private String subject;
     private String message;
     private LocalDateTime datetime;
-    private boolean isRead = false;
+    private boolean isRead;
 
     public Mail(String senderAddress, String subject, String message) {
         this.senderAddress = senderAddress;
         this.subject = subject;
         this.message = message;
         this.datetime = LocalDateTime.now();
+        this.isRead = false;
+
     }
     public void markAsRead() {
         this.isRead = true;
